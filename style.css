@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    background-color: #F5E1C8;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    color: #333;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 50px;
+    background: linear-gradient(45deg, #DA4E8E, #FF6B81, #FFB7C5);
+    -webkit-background-clip: text; /* Aplica o fundo ao texto */
+    -webkit-text-fill-color: transparent; /* Deixa o preenchimento da letra transparente */
+    
+    /* Efeito de brilho suave ao redor */
+    filter: drop-shadow(2px 2px 4px rgba(218, 78, 142, 0.3));
+}
+
+.container-botoes {
+    display: flex;
+    flex-direction: column; /* Isso faz os botões ficarem um embaixo do outro */
+    align-items: center;    /* Alinha eles no centro horizontalmente */
+    gap: 20px;              /* Define o espaçamento vertical entre eles */
+    padding: 20px;
+}
+
+/* Remove qualquer estilo padrão dos links */
+.link-btn {
+    text-decoration: none;
+}
+
+/* Estilo do Botão (O mesmo que definimos antes) */
+.btn-trancas {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #DA4E8E;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(218, 78, 142, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-trancas:hover {
+    background-color: #FF6B81;
+    transform: scale(1.05); /* Dá um leve zoom ao passar o mouse */
+    box-shadow: 0 6px 20px rgba(218, 78, 142, 0.5);
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 200px;
+}
+
+.footer-salao {
+    margin-top: auto;
+    background-color: #000000; /* Preto puro conforme solicitado */
+    color: #FFFFFF;            /* Texto branco para contraste */
+    padding: 30px 0;           /* Espaçamento interno em cima e embaixo */
+    text-align: center;
+    font-family: 'Quicksand', sans-serif; /* Usando a mesma fonte dos botões para harmonia */
+    margin-top: 50px;          /* Afasta o footer do conteúdo acima */
+    border-top: 2px solid #DA4E8E; /* Uma linha fina no topo com o seu rosa para dar estilo */
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.footer-subtext {
+    color: #A0A0A0; /* Um cinza claro para o texto secundário não brigar com o principal */
+    font-size: 0.8rem !important;
+}
