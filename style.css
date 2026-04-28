@@ -3,6 +3,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 body {
+    /* 1. Define a imagem de fundo (coloque o nome exato do arquivo aqui) */
+    background-image: url("img/imgrosaabstrata.jpg");
+
+    /* 2. Garante que a imagem se repita para cobrir toda a página */
+    background-repeat: repeat;
+
+    /* 3. Mantém a imagem no tamanho original dela (recomendado para essa estampa) */
+    background-size: auto; 
+
+    /* 4. Começa a imagem do topo esquerdo da tela */
+    background-position: top left;
+
+    /* 5. Faz a imagem ficar "parada" enquanto você rola a página */
+    background-attachment: fixed;
+
+    /* --- Seus outros estilos de body --- */
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #1A1A1A; /* Cor do texto preta suave para ler melhor no rosa */
+}
+
+body {
     background-color: #F5E1C8;
     min-height: 100vh;
     margin: 0;
@@ -14,12 +36,11 @@ h1 {
     text-align: center;
     font-size: 3em;
     margin-top: 50px;
-    background: linear-gradient(45deg, #DA4E8E, #FF6B81, #FFB7C5);
-    -webkit-background-clip: text; /* Aplica o fundo ao texto */
-    -webkit-text-fill-color: transparent; /* Deixa o preenchimento da letra transparente */
-    
-    /* Efeito de brilho suave ao redor */
-    filter: drop-shadow(2px 2px 4px rgba(218, 78, 142, 0.3));
+    background: linear-gradient(45deg, #000000, #434343, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Um brilho branco suave atrás para separar da estampa */
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.8));
 }
 
 .container-botoes {
