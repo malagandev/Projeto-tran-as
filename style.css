@@ -1,106 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
-body {
-    /* 1. Define a imagem de fundo (coloque o nome exato do arquivo aqui) */
-    background-image: url("img/imgrosaabstrata.jpg");
-
-    /* 2. Garante que a imagem se repita para cobrir toda a página */
-    background-repeat: repeat;
-
-    /* 3. Mantém a imagem no tamanho original dela (recomendado para essa estampa) */
-    background-size: auto; 
-
-    /* 4. Começa a imagem do topo esquerdo da tela */
-    background-position: top left;
-
-    /* 5. Faz a imagem ficar "parada" enquanto você rola a página */
-    background-attachment: fixed;
-
-    /* --- Seus outros estilos de body --- */
-    margin: 0;
-    font-family: 'Quicksand', sans-serif;
-    color: #1A1A1A; /* Cor do texto preta suave para ler melhor no rosa */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #F5E1C8;
-    min-height: 100vh;
-    margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffafc;
+  color: #333;
 }
 
-h1 {
-    font-family: 'Amatic SC', cursive;
-    color: #333;
-    text-align: center;
-    font-size: 3em;
-    margin-top: 50px;
-    background: linear-gradient(45deg, #000000, #434343, #000000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* Um brilho branco suave atrás para separar da estampa */
-    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.8));
+.hero {
+  height: 100vh;
+  background: url("img/foto-homepage.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.container-botoes {
-    display: flex;
-    flex-direction: column; /* Isso faz os botões ficarem um embaixo do outro */
-    align-items: center;    /* Alinha eles no centro horizontalmente */
-    gap: 20px;              /* Define o espaçamento vertical entre eles */
-    padding: 20px;
+.overlay {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 40px;
+  text-align: center;
+  border-radius: 20px;
 }
 
-/* Remove qualquer estilo padrão dos links */
-.link-btn {
-    text-decoration: none;
+.overlay h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
-/* Estilo do Botão (O mesmo que definimos antes) */
-.btn-trancas {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    color: #FFFFFF;
-    background-color: #DA4E8E;
-    padding: 12px 28px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0 4px 15px rgba(218, 78, 142, 0.3);
-    transition: all 0.3s ease;
+.overlay p {
+  color: #f8d7e3;
+  margin-bottom: 20px;
 }
 
-.btn-trancas:hover {
-    background-color: #FF6B81;
-    transform: scale(1.05); /* Dá um leve zoom ao passar o mouse */
-    box-shadow: 0 6px 20px rgba(218, 78, 142, 0.5);
+.buttons button {
+  padding: 12px 25px;
+  margin: 5px;
+  border: none;
+  border-radius: 30px;
+  background: #ff6f91;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-img {
-    display: block;
-    margin: 20px auto;
-    max-width: 200px;
+.buttons button:hover {
+  background: #ff3f6c;
 }
 
-.footer-salao {
-    margin-top: auto;
-    background-color: #000000; /* Preto puro conforme solicitado */
-    color: #FFFFFF;            /* Texto branco para contraste */
-    padding: 30px 0;           /* Espaçamento interno em cima e embaixo */
-    text-align: center;
-    font-family: 'Quicksand', sans-serif; /* Usando a mesma fonte dos botões para harmonia */
-    margin-top: 50px;          /* Afasta o footer do conteúdo acima */
-    border-top: 2px solid #DA4E8E; /* Uma linha fina no topo com o seu rosa para dar estilo */
+.historia {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
 }
 
-.footer-content p {
-    margin: 5px 0;
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
+.historia h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+  color: #d63384;
 }
 
-.footer-subtext {
-    color: #A0A0A0; /* Um cinza claro para o texto secundário não brigar com o principal */
-    font-size: 0.8rem !important;
+.historia p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.localizacao {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.localizacao h2 {
+  margin-bottom: 20px;
+  color: #d63384;
+}
+
+.mapa {
+  max-width: 800px;
+  margin: auto;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+footer {
+  background: #ff6f91;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
 }
